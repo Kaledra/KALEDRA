@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body class="corpo">
+    <div class="cont">
+        <h1 class="kaushan-script-regular">RULERS</h1>
+        <div class="deck-preview">
+            <h2 class="kaushan-script-regular">Visualização dos Decks</h2>
+            <div class="card-preview" id="card-preview">
+                <!-- As cartas serão adicionadas aqui -->
+            </div>
+        </div>
+        <div class="deck-selection">
+            <label for="deck">Escolha o seu deck:</label>
+            <select id="deck">
+                <option value="deck1">Deck 1</option>
+                <option value="deck2">Deck 2</option>
+                <!-- Adicione mais opções conforme necessário -->
+            </select>
+            <button id="show-deck">Visualizar Deck</button>
+        </div>
+        <!-- Conteúdo do jogo aqui -->
+        <a href="index.html"><button class="botao">Voltar para a Página Principal</button></a>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-modal">&times;</span>
+            <div id="modal-card-preview"></div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
