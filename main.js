@@ -1,3 +1,5 @@
+// Substitua o JavaScript existente pelo seguinte:
+
 document.getElementById('show-deck').addEventListener('click', function() {
     const deck = document.getElementById('deck').value;
     const modal = document.getElementById('modal');
@@ -24,6 +26,15 @@ document.getElementById('show-deck').addEventListener('click', function() {
         modalCardPreview.appendChild(img);
     }
     modal.style.display = 'block'; // Mostrar o modal
+
+    // Adicionar evento para ampliar a carta ao clicar nela em telas pequenas
+    if (window.innerWidth <= 600) { // Defina o tamanho máximo para dispositivos móveis
+        modalCardPreview.addEventListener('click', function(event) {
+            if (event.target.classList.contains('card')) {
+                event.target.classList.toggle('clicked');
+            }
+        });
+    }
 });
 
 document.getElementById('close-modal').addEventListener('click', function() {
