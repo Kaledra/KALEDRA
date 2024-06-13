@@ -4,18 +4,16 @@ document.getElementById('show-deck').addEventListener('click', function() {
     const modalCardPreview = document.getElementById('modal-card-preview');
     modalCardPreview.innerHTML = ''; // Limpar cartas anteriores
 
-    // Adicionar cartas com base no deck selecionado
-    let cardCount = 30; // Exemplo: número de cartas no deck
+    let cardCount = 30;
     for (let i = 1; i <= cardCount; i++) {
         let img = document.createElement('img');
-        img.src = `./Cartas${deck}/${i}.png`; // Caminho das cartas
+        img.src = `./Cartas${deck}/${i}.png`;
         img.alt = `Carta${i}`;
         img.classList.add('card');
         img.addEventListener('click', function() {
             if (img.classList.contains('clicked')) {
                 img.classList.remove('clicked');
             } else {
-                // Se não clicada, adicionar a classe 'clicked' à carta clicada
                 const allCards = document.querySelectorAll('.card');
                 allCards.forEach(card => {
                     card.classList.remove('clicked'); // Remover 'clicked' de outras cartas clicadas
