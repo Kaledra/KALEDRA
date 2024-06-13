@@ -360,3 +360,30 @@ h1, h2 {
     }
 }
 
+/* Adicione este código no final do seu arquivo CSS */
+
+@media(max-width: 600px) { /* Ajuste conforme necessário */
+    .cont {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .deck-selection select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .deck-selection button {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+        margin: 5px 0; /* Adicionado para espaçamento entre as cartas */
+    }
+
+    .modal-content {
+        margin: 15% 5%;
+    }
+}
