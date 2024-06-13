@@ -15,7 +15,7 @@ body{
 }
 
 .logo{ 
-    width: 40%;
+    width: 20%;
     height: -50%;
     margin-bottom: 23px;
   }
@@ -133,8 +133,8 @@ nav .close-icon{
  }
 
  .banner .banner-text p{ 
-    font-size: 20px;
-    color: #ffffffb7;
+    font-size: 40px;
+    color: #ffffff;
     font-weight: lighter;
     margin: 18px 0;
  }
@@ -290,23 +290,27 @@ h1, h2 {
     font-weight: 400;
     font-style: normal;
     padding-bottom: 10px; 
-  }
+}
   
+.esp {
+    margin-top: 40px;
+}
+
   @media(max-width: 830px){
 
-    .ul{
+    .ul {
         position: fixed;
         top: 0;
         left: 0;
         background: #ff7122;
         width: 100%;
-        height: 100%;
+        height: calc(100% - 100px);
         flex-direction: column;
         align-items: center;
-        color:  #ff7122;
+        color: #ff7122;
         clip-path: circle(0% at 100% 0);
         transition: 0.7s;
-    }   
+    }      
 
     .ul.open{
         clip-path: circle(141.4% at 100% 0);
@@ -318,7 +322,7 @@ h1, h2 {
     }
 
     nav .menu-icon{
-        display: none; /* Escondendo o ícone do menu */
+        display: none;
     }
 
     nav .close-icon{
@@ -329,31 +333,30 @@ h1, h2 {
     }
 
     .banner .banner-text{ 
-        margin: 50px 20px; /* Reduzindo a margem */
-        padding: 0 20px; /* Reduzindo o padding */
+        margin: 50px 20px; 
+        padding: 0 20px;
     }
 
     .banner .banner-text h1{ 
-        font-size: 48px; /* Reduzindo o tamanho do título */
+        font-size: 48px; 
     }
 
     .banner .banner-text p{ 
-        font-size: 16px; /* Reduzindo o tamanho do parágrafo */
-        margin: 10px 0; /* Reduzindo a margem */
+        font-size: 16px; 
+        margin: 10px 0;
     }
 
     .footer i{ 
-        font-size: 24px; /* Reduzindo o tamanho dos ícones de mídia social */
+        font-size: 24px; 
     }
 
     .footer p{ 
-        font-size: 14px; /* Reduzindo o tamanho do texto do rodapé */
+        font-size: 14px; 
     }
 
     .btn, .botao { 
-        display: inline-block; /* Mantendo os botões visíveis */
-        margin: 0 10px; /* Adicionando margem aos botões */
+        display: inline-block; 
+        margin: 0 10px; 
     }
 }
-
 
